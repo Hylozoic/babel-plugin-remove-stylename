@@ -5,11 +5,12 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
+    "ava": "^0.18.2",
     "babel-core": "^6.24.0",
     "babel-plugin-syntax-jsx": "^6.18.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "author": "Rich Churcher",
   "license": "Apache-2.0"
