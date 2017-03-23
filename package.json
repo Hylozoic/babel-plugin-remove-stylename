@@ -1,0 +1,16 @@
+{
+  "name": "babel-plugin-remove-stylename",
+  "version": "0.1.0",
+  "description": "Removes styleName props from React components. Useful for ignoring react-css-modules during testing without generating console warnings.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-plugin-syntax-jsx": "^6.18.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rich Churcher",
+  "license": "Apache-2.0"
+}
