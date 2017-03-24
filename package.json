@@ -2,15 +2,41 @@
   "name": "babel-plugin-remove-stylename",
   "version": "0.1.0",
   "description": "Removes styleName props from React components. Useful for ignoring react-css-modules during testing without generating console warnings.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "dependencies": {},
   "devDependencies": {
     "ava": "^0.18.2",
+    "babel-cli": "^6.24.0",
     "babel-core": "^6.24.0",
-    "babel-plugin-syntax-jsx": "^6.18.0"
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-preset-es2015": "^6.24.0"
   },
   "scripts": {
-    "test": "ava"
+    "prepublish": "npm run transpile",
+    "test": "ava",
+    "transpile": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hylozoic/babel-plugin-remove-stylename.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hylozoic/babel-plugin-remove-stylename/issues"
+  },
+  "homepage": "https://github.com/Hylozoic/babel-plugin-remove-stylename#readme",
+  "keywords": [
+    "babel",
+    "plugin",
+    "css",
+    "modules",
+    "stylename",
+    "jsx",
+    "react"
+  ],
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   },
   "author": "Rich Churcher",
   "license": "Apache-2.0"
