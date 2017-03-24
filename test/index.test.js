@@ -3,7 +3,7 @@ const path = require('path')
 const test = require('ava')
 const transformFileSync = require('babel-core').transformFileSync
 
-const plugin = require('../index')
+const plugin = require('../src/index')
 
 test('Removes styleName from single element', t => {
   const expected = fs.readFileSync(path.join(__dirname, 'singleElementExpected.jsx'), 'utf8').trim()
