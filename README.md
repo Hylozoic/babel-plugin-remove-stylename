@@ -1,6 +1,6 @@
 # babel-plugin-remove-stylename
 
-Don't care about CSS modules in your tests? Sick of React warnings Ignore `styleName` props in your tests the brute force way: by removing them with the transpiler!
+Don't care about CSS modules in your tests? Sick of React warnings? Ignore `styleName` props in your tests the brute force way: by removing them with the transpiler!
 
 
 ## Install
